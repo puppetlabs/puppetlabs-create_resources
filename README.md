@@ -1,6 +1,6 @@
 build status of unit tests:
 
-    [![Build Status](https://travis-ci.org/puppetlabs/puppetlabs-create_resources.png?branch=master)](https://travis-ci.org/puppetlabs/puppetlabs-create_resources)
+[![Build Status](https://travis-ci.org/puppetlabs/puppetlabs-create_resources.png?branch=master)](https://travis-ci.org/puppetlabs/puppetlabs-create_resources)
 
 
 - License - Apache Version 2.0
