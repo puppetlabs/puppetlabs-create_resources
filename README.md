@@ -1,3 +1,8 @@
+build status of unit tests:
+
+    [![Build Status](https://travis-ci.org/puppetlabs/puppetlabs-create_resources.png?branch=master)](https://travis-ci.org/puppetlabs/puppetlabs-create_resources)
+
+
 - License - Apache Version 2.0
 - Copyright - Puppetlabs 2011
 
@@ -10,21 +15,21 @@ I wrote this to use with an external node classifier that consumes YAML.
 
 The yaml specifies classes and passes hashes to those classes as parameters
 
-classes:
-  webserver::instances:
-    instances:
-      instance1:
-        foo: bar
-      instance2:
-        foo: blah
+    classes:
+      webserver::instances:
+        instances:
+          instance1:
+            foo: bar
+          instance2:
+            foo: blah
 
-Then puppet code can consume the hash parameters and convert then into resources
+    Then puppet code can consume the hash parameters and convert then into resources
 
-class webserver::instances (
-  $instances = {}
-) {
-  create_resources('webserver::instance', $instances)
-}
+    class webserver::instances (
+      $instances = {}
+    ) {
+      create_resources('webserver::instance', $instances)
+    }
 
 Now I can dynamically determine how webserver instances are deployed to nodes
 by updating the YAML files.
